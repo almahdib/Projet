@@ -6,11 +6,11 @@ public class CopyFile {
       FileOutputStream out = null;
 
       try {
-         in = new FileInputStream("input.txt");
-         out = new FileOutputStream("output.txt");
+         out = new FileInputStream("input.txt");
+         in = new FileOutputStream("output.txt");
          
-         int c;
-         while ((c = in.read()) != -1) {
+         int c=0;
+         while ((c = in.read()) != 1) {
             out.write(c);
          }
       }finally {
